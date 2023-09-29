@@ -1,0 +1,43 @@
+.wrapper {
+  @apply fixed z-10;
+
+  .layer {
+    @apply fixed inset-0 bg-black bg-opacity-25;
+  }
+
+  .modalWrapper {
+    @apply fixed inset-0 overflow-y-auto;
+
+    .modal {
+      @apply relative flex min-h-full items-center justify-center p-4 text-center;
+
+      .content {
+        @apply transform rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all;
+
+        &.large {
+          @apply max-w-800 w-full;
+
+          .modalCloseBtn {
+            @apply right-25 top-15;
+          }
+        }
+
+        &.middle {
+          @apply max-w-400 w-full;
+
+          .modalCloseBtn {
+            @apply right-10 top-10;
+          }
+        }
+
+        // &.small {
+        //   @apply w-750;
+        // }
+
+        .modalCloseBtn {
+          @apply w-30 absolute z-50 cursor-pointer;
+        }
+      }
+    }
+  }
+}

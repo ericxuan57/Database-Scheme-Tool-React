@@ -1,0 +1,31 @@
+.wrapper {
+  @apply relative;
+
+  .label {
+    @apply block text-18 font-normal text-neutral-800 mb-1 px-5 w-100;
+  }
+
+  .inputWrapper {
+    @apply text-16 w-full appearance-none rounded-md border border-gray-500 px-3 py-3 placeholder-gray-600 shadow-sm;
+  }
+
+  .buttonWrapper {
+    @apply absolute top-0 right-0 w-50 h-full text-neutral-900 flex justify-center items-center border-l border-l-gray-500;
+  }
+
+  .menuWrapper {
+    @apply absolute w-full shadow-2xl bg-white rounded-md max-h-200 z-10 overflow-auto;
+
+    .optionWrapper {
+      @apply cursor-default select-none pl-10 pr-4 py-10 text-16 text-neutral-800;
+
+      &.select {
+        @apply bg-gray-500;
+      }
+
+      &.active {
+        @apply bg-gray-400;
+      }
+    }
+  }
+}

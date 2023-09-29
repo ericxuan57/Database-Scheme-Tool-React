@@ -1,0 +1,15 @@
+.content {
+  @apply tablet:min-w-[300px] max-w-lg w-full flex flex-col items-center justify-center space-y-20;
+
+  .comboContent {
+    @apply flex justify-center items-end gap-20 w-full;
+  }
+
+  .combo {
+    @apply w-full;
+  }
+}
+
+.BtnContent {
+  @apply flex flex-col items-center justify-center space-y-40 w-full max-w-180;
+}

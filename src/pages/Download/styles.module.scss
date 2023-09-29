@@ -1,0 +1,19 @@
+.buttonWrapper {
+  @apply block w-full;
+
+  @screen tablet {
+    @apply flex space-x-20 mb-20 w-fit;
+  }
+
+  & > * {
+    @apply px-50 #{!important};
+  }
+
+  .downloadButton {
+    @apply flex justify-center rounded-md border-2 whitespace-nowrap py-3 bg-primary text-white border-primary hover:brightness-90;
+  }
+}
+
+.combo {
+  @apply flex items-center gap-10;
+}

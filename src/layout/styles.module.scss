@@ -1,0 +1,15 @@
+.wrapper {
+  @apply h-full flex w-full;
+
+  .PDFWrapper {
+    @apply w-full flex flex-col items-center justify-center space-y-20;
+
+    .header {
+      @apply w-full text-center bg-primary text-18 text-white px-20 py-10;
+
+      &.pending {
+        @apply bg-dark;
+      }
+    }
+  }
+}

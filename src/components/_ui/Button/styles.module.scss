@@ -1,0 +1,27 @@
+.buttonStyle {
+    @apply flex justify-center rounded-md border-2 border-gray-600 whitespace-nowrap;
+
+    &:hover {
+        @apply brightness-90;
+    }
+
+    &.primary {
+        @apply bg-primary text-white border-primary;
+    }
+
+    &.white {
+        @apply bg-white text-gray-900 border-gray-600;
+    }
+
+    &.dark {
+        @apply bg-dark text-white border-dark;
+    }
+}
+
+.medium {
+    @apply py-3 px-20;
+}
+
+.small {
+    @apply py-1 px-20;
+}

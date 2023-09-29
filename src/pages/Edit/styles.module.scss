@@ -1,0 +1,31 @@
+.tableGroup {
+  @apply grid gap-20 w-full;
+  @screen tablet {
+    @apply grid-cols-2;
+  }
+  .wrapper {
+    @apply border border-gray-400 w-full flex-1 overflow-auto h-500;
+
+    .rowContent {
+      @apply flex gap-20 items-center justify-between border-b border-gray-400 w-max min-w-full text-15;
+
+      .sectionContent {
+        @apply w-150 pl-10 flex-none truncate;
+      }
+
+      .moduleContent {
+        @apply w-200 flex-1 truncate;
+      }
+      .moduleVContent {
+        @apply w-120 truncate;
+      }
+      .customerContent {
+        @apply w-100 truncate;
+      }
+
+      .BtnGroup {
+        @apply flex gap-20 p-10 flex-none;
+      }
+    }
+  }
+}

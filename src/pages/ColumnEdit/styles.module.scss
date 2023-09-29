@@ -1,0 +1,37 @@
+.tableContent {
+  @apply flex flex-col gap-20 w-full;
+
+  @screen tablet {
+    @apply flex-row;
+  }
+  .wrapper {
+    @apply border border-gray-400 w-full h-500 overflow-auto;
+
+    .rowContent {
+      @apply flex gap-20 justify-between items-center border-b border-gray-400 text-15 w-max min-w-full;
+
+      .sectionContent {
+        @apply w-150 pl-20 flex-none truncate;
+      }
+
+      .typeContent {
+        @apply w-100 flex-none truncate;
+      }
+
+      .columnNameContent {
+        @apply w-200 truncate flex-1 pl-20;
+      }
+
+      .columnVContent {
+        @apply w-120 truncate;
+      }
+
+      .moduleContent {
+        @apply w-200 flex-1 truncate;
+      }
+      .BtnGroup {
+        @apply flex gap-20 p-10 flex-none;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.formWrapper {
+  @apply w-full flex flex-col gap-10 mt-30;
+
+  .btnGroup {
+    @screen tablet {
+      @apply flex justify-center gap-20;
+    }
+
+    .btnContent {
+      @apply w-full mb-5;
+
+      @screen tablet {
+        @apply w-fit;
+      }
+    }
+  }
+
+  .combo {
+    @screen tablet {
+      @apply flex items-center gap-10;
+    }
+  }
+}

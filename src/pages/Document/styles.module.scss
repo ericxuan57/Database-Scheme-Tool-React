@@ -1,0 +1,26 @@
+.wrapper {
+  @apply border-t border-r border-l border-gray-400  w-350 tablet:w-800 max-w-800 max-h-500 overflow-auto;
+
+  .content {
+    @apply flex justify-center items-center border-b border-gray-400 p-5;
+
+    .customerName {
+      @apply w-2/3;
+    }
+    .BtnGroup {
+      @apply flex gap-20;
+    }
+  }
+}
+
+.Mcontent {
+  @apply mt-40;
+
+  .customerValue {
+    @apply w-full;
+  }
+
+  .BtnGroup {
+    @apply flex justify-center gap-20 mt-20;
+  }
+}
